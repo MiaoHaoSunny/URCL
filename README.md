@@ -1,1 +1,1 @@
-Under arrangement
+Under management
