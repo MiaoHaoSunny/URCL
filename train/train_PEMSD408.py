@@ -164,13 +164,9 @@ def train_PEMSD408(args):
                 his_loss.append(mvalid_mae)
                 log = 'Epoch: {:03d}, Train Loss: {:.4f}, Train MAE: {:.4f} Train MAPE: {:.4f}, Train RMSE: {:.4f}, Valid Loss: {:.4f}, Valid MAPE: {:.4f}, Valid RMSE: {:.4f}, Training Time: {:.4f}/epoch'
                 logger.info(log.format(i, mtrain_loss, mtrain_mae, mtrain_mape, mtrain_rmse, mvalid_mae, mvalid_mape, mvalid_rmse, (t2-t1)))
-                torch.save(model.state_dict(), args.save+"_epoch_"+str(i)+"_"+str(round(mvalid_mae,2))+'_task' + str(task_id)+".pth")
+                
             logger.info('Average Training Time: {:.4f} sec/epoch'.format(np.mean(train_time)))
             logger.info('Average Inferecen Time: {:.4f} sec'.format(np.mean(val_time)))
-
-            # testing
-            bestid = np.argmin(his_loss)
-            model.load_state_dict(torch.load(args.save+'_epoch_'+str(bestid+1)+'_'+str(round(his_loss[bestid],2))+'_task' + str(task_id)+'.pth'))
 
             outputs = []
             realy = []
@@ -213,10 +209,6 @@ def train_PEMSD408(args):
                 amae.append(metrics[0])
                 amape.append(metrics[1])
                 armse.append(metrics[2])
-            
-            log = 'On average over 12 horizons, Test MAE: {:.4f}, Test MAPE: {:.4f}, Test RMSE: {:.4f}'
-            logger.info(log.format(np.mean(amae),np.mean(amape),np.mean(armse)))
-            torch.save(model.state_dict(), args.save+"_exp"+str(args.expid)+"_best_"+str(round(his_loss[bestid],2))+'_task' + str(task_id) +".pth")
 
             his_loss_list.append(his_loss)
         else:
@@ -387,9 +379,5 @@ def train_PEMSD408(args):
                 amae.append(metrics[0])
                 amape.append(metrics[1])
                 armse.append(metrics[2])
-            
-            log = 'On average over 12 horizons, Test MAE: {:.4f}, Test MAPE: {:.4f}, Test RMSE: {:.4f}'
-            logger.info(log.format(np.mean(amae),np.mean(amape),np.mean(armse)))
-            torch.save(model.state_dict(), args.save+"_exp"+str(args.expid)+"_best_"+str(round(his_loss[bestid],2))+'_task' + str(task_id) +".pth")
 
             his_loss_list.append(his_loss)
