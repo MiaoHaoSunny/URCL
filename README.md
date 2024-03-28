@@ -4,7 +4,7 @@ A simplified code of Our ICDE24 paper: A Unified Replay-based Continuous Learnin
 
 ## Requirements
 - Python 3
-- Pytorch
+- Pytorch 1.6
 - Numpy
 
 ## Data Preparation
