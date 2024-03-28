@@ -14,7 +14,6 @@ import torch.nn.functional as F
 from torch.utils.data import DataLoader
 from typing import Tuple
 
-
 class Sequential_PEMSD408(STContinualDataset):
     NAME = 'seq_pemsd408'
     SETTING = 'instance-il'
