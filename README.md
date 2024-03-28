@@ -7,6 +7,13 @@ A simplified code of Our ICDE24 paper: A Unified Replay-based Continuous Learnin
 - Pytorch
 - Numpy
 
+## Data Preparation
+AutoCTS is implemented on several public correlated time series forecasting datasets.
+
+- **METR-LA** and **PEMS-BAY** from [Google Drive](https://drive.google.com/open?id=10FOTa6HXPqX8Pf5WRoRwcFnW9BrNZEIX) or [Baidu Yun](https://pan.baidu.com/s/14Yy9isAIZYdU__OYEQGa_g) links provided by [DCRNN](https://github.com/liyaguang/DCRNN)
+
+- **PEMS04** and **PEMS08** from [STSGCN (AAAI-20)](https://github.com/Davidham3/STSGCN).
+
 # Reference
 
 If you use URCL for your research, please cite the following paper. 
