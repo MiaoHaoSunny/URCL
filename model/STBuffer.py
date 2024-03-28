@@ -117,7 +117,7 @@ class Buffer:
     
     def get_mir_data(self, model, size, batch_size, lr=0.01, args=None):
 
-    # Pure MIR sampling without ranking and augmentation, the full version will be released soon after careful arrangement.
+    # Pure MIR sampling without ranking and augmentation, we will release the full version soon.
 
         if size > min(self.num_seen_examples, self.examples.shape[0]):
             size = min(self.num_seen_examples, self.examples.shape[0])
