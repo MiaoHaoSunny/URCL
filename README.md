@@ -3,7 +3,7 @@
 A simplified code of Our ICDE24 paper: A Unified Replay-based Continuous Learning Framework for Spatio-Temporal Prediction on Streaming Data
 
 ## Requirements
-- python 3
+- Python 3
 - Pytorch
 - Numpy
 
