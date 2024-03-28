@@ -19,7 +19,6 @@ from SeqDataset.seq_PEMSD408 import Sequential_PEMSD408
 from GraphWaveNet import util
 from datasets.utils.utils import simple_contrastive_loss
 
-
 # def unified_train()
 
 
