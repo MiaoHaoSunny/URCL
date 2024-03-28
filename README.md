@@ -14,7 +14,12 @@ URCL is implemented on several public correlated time series forecasting dataset
 
 - **PEMS04** and **PEMS08** from [STSGCN (AAAI-20)](https://github.com/Davidham3/STSGCN).
 
-# Reference
+## Run
+from train..train_PEMSD408 import train_PEMSD408
+
+train_PEMSD408(args)
+
+## Reference
 
 If you use URCL for your research, please cite the following paper. 
 <pre>     
