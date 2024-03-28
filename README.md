@@ -1,6 +1,6 @@
 # URCL Code
 
-A simplified code of Our ICDE24 paper: A Unified Replay-based Continuous Learning Framework for Spatio-Temporal Prediction on Streaming Data
+A simplified code of our ICDE24 paper: A Unified Replay-based Continuous Learning Framework for Spatio-Temporal Prediction on Streaming Data
 
 ## Requirements
 - Python 3
