@@ -15,7 +15,6 @@ from model.continual_model import ContinualModel
 # from Baselines.Ablation_study.continual_model import ContinualModel
 from model.STBuffer import Buffer
 from data.get_logger import get_logger
-from SeqDataset.seq_metr_la import Sequential_METR_LA
 from SeqDataset.seq_PEMSD408 import Sequential_PEMSD408
 from GraphWaveNet import util
 from datasets.utils.utils import simple_contrastive_loss
