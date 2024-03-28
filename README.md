@@ -9,7 +9,7 @@ A simplified code of Our ICDE24 paper: A Unified Replay-based Continuous Learnin
 
 # Reference
 
-If you use AutoCTS for your research, please cite the following paper. 
+If you use URCL for your research, please cite the following paper. 
 <pre>     
 @article{miaoicde24,
   author       = {Hao Miao and Yan Zhao and Chenjuan Guo and Bin Yang and Zheng Kai and Feiteng Huang and Jiandong Xie and Christian S. Jensen},
