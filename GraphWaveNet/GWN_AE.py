@@ -9,7 +9,6 @@ from torch.autograd import Variable
 from GraphWaveNet.model import nconv, linear, gcn
 from model.ST_aug import get_batch_augment_data
 
-
 class gwnet_encoder(nn.Module):
     def __init__(self, device, num_nodes, dropout=0.3, supports=None, gcn_bool=True, addaptadj=True, aptinit=None, in_dim=2,residual_channels=32,dilation_channels=32,skip_channels=256,kernel_size=2,blocks=4,layers=2):
         super(gwnet_encoder, self).__init__()
